@@ -37,7 +37,6 @@ d = [
     1 * e^(i * 40.26),  # ShoppingCart.items
     1.13262554 * e^(i * 40.27),  # ShoppingCart.add_item
     1.19121701 * e^(i * 40.28),  # ShoppingCart.remove_item
-    
     1.11737441 * e^(i * 35.29),  # ShoppingCart.checkout
     1 * e^(i * 45.30),  # Payment.payment_id
     1 * e^(i * 35.31),  # Payment.order
