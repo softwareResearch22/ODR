@@ -1,3 +1,4 @@
+Remarks: CBO = 25
 d = [
     1 * e^(i * 10.01),  # Product.product_id
     1 * e^(i * 10.02),  # Product.name
