@@ -1,0 +1,572 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "class",
+            "id": "Product"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product_id",
+                "name",
+                "price",
+                "category"
+            ],
+            "id": "Product.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "new_price"
+            ],
+            "id": "Product.update_price"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "stock_change"
+            ],
+            "id": "Product.update_stock"
+        },
+        {
+            "type": "class",
+            "id": "User"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "user_id",
+                "name",
+                "email",
+                "address"
+            ],
+            "id": "User.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "new_address"
+            ],
+            "id": "User.update_address"
+        },
+        {
+            "type": "class",
+            "id": "Customer"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "user_id",
+                "name",
+                "email",
+                "address"
+            ],
+            "id": "Customer.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product"
+            ],
+            "id": "Customer.add_to_cart"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self"
+            ],
+            "id": "Customer.place_order"
+        },
+        {
+            "type": "class",
+            "id": "Admin"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "user_id",
+                "name",
+                "email",
+                "address"
+            ],
+            "id": "Admin.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product",
+                "product_list"
+            ],
+            "id": "Admin.add_product"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product_id",
+                "product_list"
+            ],
+            "id": "Admin.remove_product"
+        },
+        {
+            "type": "class",
+            "id": "Order"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "order_id",
+                "customer",
+                "products",
+                "status"
+            ],
+            "id": "Order.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product"
+            ],
+            "id": "Order.add_product"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product_id"
+            ],
+            "id": "Order.remove_product"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "new_status"
+            ],
+            "id": "Order.update_status"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self"
+            ],
+            "id": "Order.checkout"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self"
+            ],
+            "id": "Order.process_payment"
+        },
+        {
+            "type": "class",
+            "id": "ShoppingCart"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "customer"
+            ],
+            "id": "ShoppingCart.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product"
+            ],
+            "id": "ShoppingCart.add_item"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product_id"
+            ],
+            "id": "ShoppingCart.remove_item"
+        },
+        {
+            "type": "class",
+            "id": "Payment"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "payment_id",
+                "order",
+                "amount",
+                "status"
+            ],
+            "id": "Payment.__init__"
+        },
+        {
+            "type": "class",
+            "id": "ProductCategory"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "category_id",
+                "name",
+                "description"
+            ],
+            "id": "ProductCategory.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product"
+            ],
+            "id": "ProductCategory.add_product"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product_id"
+            ],
+            "id": "ProductCategory.remove_product"
+        },
+        {
+            "type": "class",
+            "id": "Inventory"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product",
+                "stock"
+            ],
+            "id": "Inventory.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "change_in_stock"
+            ],
+            "id": "Inventory.update_stock"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self"
+            ],
+            "id": "Inventory.check_availability"
+        },
+        {
+            "type": "class",
+            "id": "Review"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "review_id",
+                "product",
+                "customer",
+                "rating",
+                "comment"
+            ],
+            "id": "Review.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self"
+            ],
+            "id": "Review.post_review"
+        },
+        {
+            "type": "class",
+            "id": "Shipping"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "order",
+                "address",
+                "status"
+            ],
+            "id": "Shipping.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "new_status"
+            ],
+            "id": "Shipping.update_status"
+        },
+        {
+            "type": "class",
+            "id": "Notification"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "notification_id",
+                "user",
+                "message"
+            ],
+            "id": "Notification.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self"
+            ],
+            "id": "Notification.send_notification"
+        },
+        {
+            "type": "class",
+            "id": "Wishlist"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "customer"
+            ],
+            "id": "Wishlist.__init__"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product"
+            ],
+            "id": "Wishlist.add_item"
+        },
+        {
+            "type": "method",
+            "args": [
+                "self",
+                "product_id"
+            ],
+            "id": "Wishlist.remove_item"
+        },
+        {
+            "type": "class",
+            "id": "Analytics"
+        },
+        {
+            "type": "method",
+            "args": [
+                "orders"
+            ],
+            "id": "Analytics.generate_sales_report"
+        },
+        {
+            "type": "method",
+            "args": [
+                "users"
+            ],
+            "id": "Analytics.generate_user_activity_report"
+        },
+        {
+            "type": "class",
+            "id": "Search"
+        },
+        {
+            "type": "method",
+            "args": [
+                "products",
+                "query"
+            ],
+            "id": "Search.search_products"
+        },
+        {
+            "type": "method",
+            "args": [
+                "products",
+                "category_name"
+            ],
+            "id": "Search.filter_by_category"
+        }
+    ],
+    "links": [
+        {
+            "source": "Product",
+            "target": "Product.__init__"
+        },
+        {
+            "source": "Product",
+            "target": "Product.update_price"
+        },
+        {
+            "source": "Product",
+            "target": "Product.update_stock"
+        },
+        {
+            "source": "User",
+            "target": "User.__init__"
+        },
+        {
+            "source": "User",
+            "target": "User.update_address"
+        },
+        {
+            "source": "Customer",
+            "target": "Customer.__init__"
+        },
+        {
+            "source": "Customer",
+            "target": "Customer.add_to_cart"
+        },
+        {
+            "source": "Customer",
+            "target": "Customer.place_order"
+        },
+        {
+            "source": "Admin",
+            "target": "Admin.__init__"
+        },
+        {
+            "source": "Admin",
+            "target": "Admin.add_product"
+        },
+        {
+            "source": "Admin",
+            "target": "Admin.remove_product"
+        },
+        {
+            "source": "Order",
+            "target": "Order.__init__"
+        },
+        {
+            "source": "Order",
+            "target": "Order.add_product"
+        },
+        {
+            "source": "Order",
+            "target": "Order.remove_product"
+        },
+        {
+            "source": "Order",
+            "target": "Order.update_status"
+        },
+        {
+            "source": "Order",
+            "target": "Order.checkout"
+        },
+        {
+            "source": "Order",
+            "target": "Order.process_payment"
+        },
+        {
+            "source": "ShoppingCart",
+            "target": "ShoppingCart.__init__"
+        },
+        {
+            "source": "ShoppingCart",
+            "target": "ShoppingCart.add_item"
+        },
+        {
+            "source": "ShoppingCart",
+            "target": "ShoppingCart.remove_item"
+        },
+        {
+            "source": "Payment",
+            "target": "Payment.__init__"
+        },
+        {
+            "source": "ProductCategory",
+            "target": "ProductCategory.__init__"
+        },
+        {
+            "source": "ProductCategory",
+            "target": "ProductCategory.add_product"
+        },
+        {
+            "source": "ProductCategory",
+            "target": "ProductCategory.remove_product"
+        },
+        {
+            "source": "Inventory",
+            "target": "Inventory.__init__"
+        },
+        {
+            "source": "Inventory",
+            "target": "Inventory.update_stock"
+        },
+        {
+            "source": "Inventory",
+            "target": "Inventory.check_availability"
+        },
+        {
+            "source": "Review",
+            "target": "Review.__init__"
+        },
+        {
+            "source": "Review",
+            "target": "Review.post_review"
+        },
+        {
+            "source": "Shipping",
+            "target": "Shipping.__init__"
+        },
+        {
+            "source": "Shipping",
+            "target": "Shipping.update_status"
+        },
+        {
+            "source": "Notification",
+            "target": "Notification.__init__"
+        },
+        {
+            "source": "Notification",
+            "target": "Notification.send_notification"
+        },
+        {
+            "source": "Wishlist",
+            "target": "Wishlist.__init__"
+        },
+        {
+            "source": "Wishlist",
+            "target": "Wishlist.add_item"
+        },
+        {
+            "source": "Wishlist",
+            "target": "Wishlist.remove_item"
+        },
+        {
+            "source": "Analytics",
+            "target": "Analytics.generate_sales_report"
+        },
+        {
+            "source": "Analytics",
+            "target": "Analytics.generate_user_activity_report"
+        },
+        {
+            "source": "Search",
+            "target": "Search.search_products"
+        },
+        {
+            "source": "Search",
+            "target": "Search.filter_by_category"
+        }
+    ]
+}
