@@ -1,0 +1,1870 @@
+Module(
+    body=[
+        ClassDef(
+            name='Product',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product_id'),
+                            arg(arg='name'),
+                            arg(arg='price'),
+                            arg(arg='category')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='product_id',
+                                    ctx=Store())],
+                            value=Name(id='product_id', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='name',
+                                    ctx=Store())],
+                            value=Name(id='name', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='price',
+                                    ctx=Store())],
+                            value=Name(id='price', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='category',
+                                    ctx=Store())],
+                            value=Name(id='category', ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='update_price',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='new_price')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='price',
+                                    ctx=Store())],
+                            value=Name(id='new_price', ctx=Load())),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Price of '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' updated to '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='price',
+                                                    ctx=Load()),
+                                                conversion=-1)])],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='update_stock',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='stock_change')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Stock for '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' updated by '),
+                                            FormattedValue(
+                                                value=Name(id='stock_change', ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' units.')])],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='User',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='user_id'),
+                            arg(arg='name'),
+                            arg(arg='email'),
+                            arg(arg='address')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='user_id',
+                                    ctx=Store())],
+                            value=Name(id='user_id', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='name',
+                                    ctx=Store())],
+                            value=Name(id='name', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='email',
+                                    ctx=Store())],
+                            value=Name(id='email', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='address',
+                                    ctx=Store())],
+                            value=Name(id='address', ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='update_address',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='new_address')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='address',
+                                    ctx=Store())],
+                            value=Name(id='new_address', ctx=Load())),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Address for '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' updated to '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='address',
+                                                    ctx=Load()),
+                                                conversion=-1)])],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Customer',
+            bases=[
+                Name(id='User', ctx=Load())],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='user_id'),
+                            arg(arg='name'),
+                            arg(arg='email'),
+                            arg(arg='address')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Call(
+                                        func=Name(id='super', ctx=Load()),
+                                        args=[],
+                                        keywords=[]),
+                                    attr='__init__',
+                                    ctx=Load()),
+                                args=[
+                                    Name(id='user_id', ctx=Load()),
+                                    Name(id='name', ctx=Load()),
+                                    Name(id='email', ctx=Load()),
+                                    Name(id='address', ctx=Load())],
+                                keywords=[])),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='cart',
+                                    ctx=Store())],
+                            value=List(elts=[], ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='order_history',
+                                    ctx=Store())],
+                            value=List(elts=[], ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='add_to_cart',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Attribute(
+                                        value=Name(id='self', ctx=Load()),
+                                        attr='cart',
+                                        ctx=Load()),
+                                    attr='append',
+                                    ctx=Load()),
+                                args=[
+                                    Name(id='product', ctx=Load())],
+                                keywords=[])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='product', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' added to '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value="'s cart.")])],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='place_order',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        If(
+                            test=UnaryOp(
+                                op=Not(),
+                                operand=Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='cart',
+                                    ctx=Load())),
+                            body=[
+                                Expr(
+                                    value=Call(
+                                        func=Name(id='print', ctx=Load()),
+                                        args=[
+                                            Constant(value='Your cart is empty.')],
+                                        keywords=[])),
+                                Return()],
+                            orelse=[]),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Order placed for '),
+                                            FormattedValue(
+                                                value=Call(
+                                                    func=Name(id='len', ctx=Load()),
+                                                    args=[
+                                                        Attribute(
+                                                            value=Name(id='self', ctx=Load()),
+                                                            attr='cart',
+                                                            ctx=Load())],
+                                                    keywords=[]),
+                                                conversion=-1),
+                                            Constant(value=' items.')])],
+                                keywords=[])),
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Attribute(
+                                        value=Name(id='self', ctx=Load()),
+                                        attr='order_history',
+                                        ctx=Load()),
+                                    attr='append',
+                                    ctx=Load()),
+                                args=[
+                                    Attribute(
+                                        value=Name(id='self', ctx=Load()),
+                                        attr='cart',
+                                        ctx=Load())],
+                                keywords=[])),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='cart',
+                                    ctx=Store())],
+                            value=List(elts=[], ctx=Load()))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Admin',
+            bases=[
+                Name(id='User', ctx=Load())],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='user_id'),
+                            arg(arg='name'),
+                            arg(arg='email'),
+                            arg(arg='address')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Call(
+                                        func=Name(id='super', ctx=Load()),
+                                        args=[],
+                                        keywords=[]),
+                                    attr='__init__',
+                                    ctx=Load()),
+                                args=[
+                                    Name(id='user_id', ctx=Load()),
+                                    Name(id='name', ctx=Load()),
+                                    Name(id='email', ctx=Load()),
+                                    Name(id='address', ctx=Load())],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='add_product',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product'),
+                            arg(arg='product_list')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Name(id='product_list', ctx=Load()),
+                                    attr='append',
+                                    ctx=Load()),
+                                args=[
+                                    Name(id='product', ctx=Load())],
+                                keywords=[])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='product', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' added to the catalog.')])],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='remove_product',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product_id'),
+                            arg(arg='product_list')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        For(
+                            target=Tuple(
+                                elts=[
+                                    Name(id='i', ctx=Store()),
+                                    Name(id='product', ctx=Store())],
+                                ctx=Store()),
+                            iter=Call(
+                                func=Name(id='enumerate', ctx=Load()),
+                                args=[
+                                    Name(id='product_list', ctx=Load())],
+                                keywords=[]),
+                            body=[
+                                If(
+                                    test=Compare(
+                                        left=Attribute(
+                                            value=Name(id='product', ctx=Load()),
+                                            attr='product_id',
+                                            ctx=Load()),
+                                        ops=[
+                                            Eq()],
+                                        comparators=[
+                                            Name(id='product_id', ctx=Load())]),
+                                    body=[
+                                        Assign(
+                                            targets=[
+                                                Name(id='removed_product', ctx=Store())],
+                                            value=Call(
+                                                func=Attribute(
+                                                    value=Name(id='product_list', ctx=Load()),
+                                                    attr='pop',
+                                                    ctx=Load()),
+                                                args=[
+                                                    Name(id='i', ctx=Load())],
+                                                keywords=[])),
+                                        Expr(
+                                            value=Call(
+                                                func=Name(id='print', ctx=Load()),
+                                                args=[
+                                                    JoinedStr(
+                                                        values=[
+                                                            FormattedValue(
+                                                                value=Attribute(
+                                                                    value=Name(id='removed_product', ctx=Load()),
+                                                                    attr='name',
+                                                                    ctx=Load()),
+                                                                conversion=-1),
+                                                            Constant(value=' removed from the catalog.')])],
+                                                keywords=[])),
+                                        Return()],
+                                    orelse=[])],
+                            orelse=[]),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    Constant(value='Product not found.')],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Order',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='order_id'),
+                            arg(arg='customer'),
+                            arg(arg='products'),
+                            arg(arg='status')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[
+                            Constant(value=None),
+                            Constant(value='Pending')]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='order_id',
+                                    ctx=Store())],
+                            value=Name(id='order_id', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='customer',
+                                    ctx=Store())],
+                            value=Name(id='customer', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='products',
+                                    ctx=Store())],
+                            value=IfExp(
+                                test=Name(id='products', ctx=Load()),
+                                body=Name(id='products', ctx=Load()),
+                                orelse=List(elts=[], ctx=Load()))),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='status',
+                                    ctx=Store())],
+                            value=Name(id='status', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='order',
+                                    ctx=Store())],
+                            value=Name(id='order', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='status',
+                                    ctx=Store())],
+                            value=Name(id='status', ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='add_product',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Attribute(
+                                        value=Name(id='self', ctx=Load()),
+                                        attr='products',
+                                        ctx=Load()),
+                                    attr='append',
+                                    ctx=Load()),
+                                args=[
+                                    Name(id='product', ctx=Load())],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='remove_product',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product_id')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='products',
+                                    ctx=Store())],
+                            value=ListComp(
+                                elt=Name(id='product', ctx=Load()),
+                                generators=[
+                                    comprehension(
+                                        target=Name(id='product', ctx=Store()),
+                                        iter=Attribute(
+                                            value=Name(id='self', ctx=Load()),
+                                            attr='products',
+                                            ctx=Load()),
+                                        ifs=[
+                                            Compare(
+                                                left=Attribute(
+                                                    value=Name(id='product', ctx=Load()),
+                                                    attr='product_id',
+                                                    ctx=Load()),
+                                                ops=[
+                                                    NotEq()],
+                                                comparators=[
+                                                    Name(id='product_id', ctx=Load())])],
+                                        is_async=0)]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='update_status',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='new_status')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='status',
+                                    ctx=Store())],
+                            value=Name(id='new_status', ctx=Load())),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Order '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='order_id',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' status updated to '),
+                                            FormattedValue(
+                                                value=Name(id='new_status', ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value='.')])],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='checkout',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Name(id='order', ctx=Store())],
+                            value=Call(
+                                func=Name(id='Order', ctx=Load()),
+                                args=[],
+                                keywords=[
+                                    keyword(
+                                        arg='order_id',
+                                        value=Call(
+                                            func=Name(id='str', ctx=Load()),
+                                            args=[
+                                                Call(
+                                                    func=Attribute(
+                                                        value=Name(id='uuid', ctx=Load()),
+                                                        attr='uuid4',
+                                                        ctx=Load()),
+                                                    args=[],
+                                                    keywords=[])],
+                                            keywords=[])),
+                                    keyword(
+                                        arg='customer',
+                                        value=Attribute(
+                                            value=Name(id='self', ctx=Load()),
+                                            attr='customer',
+                                            ctx=Load())),
+                                    keyword(
+                                        arg='products',
+                                        value=Attribute(
+                                            value=Name(id='self', ctx=Load()),
+                                            attr='items',
+                                            ctx=Load())),
+                                    keyword(
+                                        arg='status',
+                                        value=Constant(value='Pending'))])),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='items',
+                                    ctx=Store())],
+                            value=List(elts=[], ctx=Load())),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Checkout successful for order '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='order', ctx=Load()),
+                                                    attr='order_id',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value='.')])],
+                                keywords=[])),
+                        Return(
+                            value=Name(id='order', ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='process_payment',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='status',
+                                    ctx=Store())],
+                            value=Constant(value='Completed')),
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Attribute(
+                                        value=Name(id='self', ctx=Load()),
+                                        attr='order',
+                                        ctx=Load()),
+                                    attr='update_status',
+                                    ctx=Load()),
+                                args=[
+                                    Constant(value='Paid')],
+                                keywords=[])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Payment '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='payment_id',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' for order '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Attribute(
+                                                        value=Name(id='self', ctx=Load()),
+                                                        attr='order',
+                                                        ctx=Load()),
+                                                    attr='order_id',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' completed.')])],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='ShoppingCart',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='customer')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='customer',
+                                    ctx=Store())],
+                            value=Name(id='customer', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='items',
+                                    ctx=Store())],
+                            value=List(elts=[], ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='add_item',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Attribute(
+                                        value=Name(id='self', ctx=Load()),
+                                        attr='items',
+                                        ctx=Load()),
+                                    attr='append',
+                                    ctx=Load()),
+                                args=[
+                                    Name(id='product', ctx=Load())],
+                                keywords=[])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Added '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='product', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' to the cart.')])],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='remove_item',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product_id')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='items',
+                                    ctx=Store())],
+                            value=ListComp(
+                                elt=Name(id='item', ctx=Load()),
+                                generators=[
+                                    comprehension(
+                                        target=Name(id='item', ctx=Store()),
+                                        iter=Attribute(
+                                            value=Name(id='self', ctx=Load()),
+                                            attr='items',
+                                            ctx=Load()),
+                                        ifs=[
+                                            Compare(
+                                                left=Attribute(
+                                                    value=Name(id='item', ctx=Load()),
+                                                    attr='product_id',
+                                                    ctx=Load()),
+                                                ops=[
+                                                    NotEq()],
+                                                comparators=[
+                                                    Name(id='product_id', ctx=Load())])],
+                                        is_async=0)])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Removed product '),
+                                            FormattedValue(
+                                                value=Name(id='product_id', ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' from the cart.')])],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Payment',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='payment_id'),
+                            arg(arg='order'),
+                            arg(arg='amount'),
+                            arg(arg='status')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[
+                            Constant(value='Pending')]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='payment_id',
+                                    ctx=Store())],
+                            value=Name(id='payment_id', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='amount',
+                                    ctx=Store())],
+                            value=Name(id='amount', ctx=Load()))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='ProductCategory',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='category_id'),
+                            arg(arg='name'),
+                            arg(arg='description')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='category_id',
+                                    ctx=Store())],
+                            value=Name(id='category_id', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='name',
+                                    ctx=Store())],
+                            value=Name(id='name', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='description',
+                                    ctx=Store())],
+                            value=Name(id='description', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='products',
+                                    ctx=Store())],
+                            value=List(elts=[], ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='add_product',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Attribute(
+                                        value=Name(id='self', ctx=Load()),
+                                        attr='products',
+                                        ctx=Load()),
+                                    attr='append',
+                                    ctx=Load()),
+                                args=[
+                                    Name(id='product', ctx=Load())],
+                                keywords=[])),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='product', ctx=Load()),
+                                    attr='category',
+                                    ctx=Store())],
+                            value=Attribute(
+                                value=Name(id='self', ctx=Load()),
+                                attr='name',
+                                ctx=Load())),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Added '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='product', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' to category '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value='.')])],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='remove_product',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product_id')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='products',
+                                    ctx=Store())],
+                            value=ListComp(
+                                elt=Name(id='product', ctx=Load()),
+                                generators=[
+                                    comprehension(
+                                        target=Name(id='product', ctx=Store()),
+                                        iter=Attribute(
+                                            value=Name(id='self', ctx=Load()),
+                                            attr='products',
+                                            ctx=Load()),
+                                        ifs=[
+                                            Compare(
+                                                left=Attribute(
+                                                    value=Name(id='product', ctx=Load()),
+                                                    attr='product_id',
+                                                    ctx=Load()),
+                                                ops=[
+                                                    NotEq()],
+                                                comparators=[
+                                                    Name(id='product_id', ctx=Load())])],
+                                        is_async=0)])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Removed product '),
+                                            FormattedValue(
+                                                value=Name(id='product_id', ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' from category '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value='.')])],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Inventory',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product'),
+                            arg(arg='stock')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[
+                            Constant(value=0)]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='product',
+                                    ctx=Store())],
+                            value=Name(id='product', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='stock',
+                                    ctx=Store())],
+                            value=Name(id='stock', ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='update_stock',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='change_in_stock')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        AugAssign(
+                            target=Attribute(
+                                value=Name(id='self', ctx=Load()),
+                                attr='stock',
+                                ctx=Store()),
+                            op=Add(),
+                            value=Name(id='change_in_stock', ctx=Load())),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Stock for '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Attribute(
+                                                        value=Name(id='self', ctx=Load()),
+                                                        attr='product',
+                                                        ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' updated to '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='stock',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value='.')])],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='check_availability',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Return(
+                            value=Compare(
+                                left=Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='stock',
+                                    ctx=Load()),
+                                ops=[
+                                    Gt()],
+                                comparators=[
+                                    Constant(value=0)]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Review',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='review_id'),
+                            arg(arg='product'),
+                            arg(arg='customer'),
+                            arg(arg='rating'),
+                            arg(arg='comment')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='review_id',
+                                    ctx=Store())],
+                            value=Name(id='review_id', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='product',
+                                    ctx=Store())],
+                            value=Name(id='product', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='customer',
+                                    ctx=Store())],
+                            value=Name(id='customer', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='rating',
+                                    ctx=Store())],
+                            value=Name(id='rating', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='comment',
+                                    ctx=Store())],
+                            value=Name(id='comment', ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='post_review',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Review posted for '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Attribute(
+                                                        value=Name(id='self', ctx=Load()),
+                                                        attr='product',
+                                                        ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' by '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Attribute(
+                                                        value=Name(id='self', ctx=Load()),
+                                                        attr='customer',
+                                                        ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=': '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='comment',
+                                                    ctx=Load()),
+                                                conversion=-1)])],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Shipping',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='order'),
+                            arg(arg='address'),
+                            arg(arg='status')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[
+                            Constant(value='Pending')]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='order',
+                                    ctx=Store())],
+                            value=Name(id='order', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='address',
+                                    ctx=Store())],
+                            value=Name(id='address', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='status',
+                                    ctx=Store())],
+                            value=Name(id='status', ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='update_status',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='new_status')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='status',
+                                    ctx=Store())],
+                            value=Name(id='new_status', ctx=Load())),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Shipping status for order '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Attribute(
+                                                        value=Name(id='self', ctx=Load()),
+                                                        attr='order',
+                                                        ctx=Load()),
+                                                    attr='order_id',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' updated to '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='status',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value='.')])],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Notification',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='notification_id'),
+                            arg(arg='user'),
+                            arg(arg='message')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='notification_id',
+                                    ctx=Store())],
+                            value=Name(id='notification_id', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='user',
+                                    ctx=Store())],
+                            value=Name(id='user', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='message',
+                                    ctx=Store())],
+                            value=Name(id='message', ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='send_notification',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Notification sent to '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Attribute(
+                                                        value=Name(id='self', ctx=Load()),
+                                                        attr='user',
+                                                        ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=': '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='self', ctx=Load()),
+                                                    attr='message',
+                                                    ctx=Load()),
+                                                conversion=-1)])],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Wishlist',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='__init__',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='customer')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='customer',
+                                    ctx=Store())],
+                            value=Name(id='customer', ctx=Load())),
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='items',
+                                    ctx=Store())],
+                            value=List(elts=[], ctx=Load()))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='add_item',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Expr(
+                            value=Call(
+                                func=Attribute(
+                                    value=Attribute(
+                                        value=Name(id='self', ctx=Load()),
+                                        attr='items',
+                                        ctx=Load()),
+                                    attr='append',
+                                    ctx=Load()),
+                                args=[
+                                    Name(id='product', ctx=Load())],
+                                keywords=[])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Added '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Name(id='product', ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' to '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Attribute(
+                                                        value=Name(id='self', ctx=Load()),
+                                                        attr='customer',
+                                                        ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value="'s wishlist.")])],
+                                keywords=[]))],
+                    decorator_list=[]),
+                FunctionDef(
+                    name='remove_item',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='self'),
+                            arg(arg='product_id')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Attribute(
+                                    value=Name(id='self', ctx=Load()),
+                                    attr='items',
+                                    ctx=Store())],
+                            value=ListComp(
+                                elt=Name(id='item', ctx=Load()),
+                                generators=[
+                                    comprehension(
+                                        target=Name(id='item', ctx=Store()),
+                                        iter=Attribute(
+                                            value=Name(id='self', ctx=Load()),
+                                            attr='items',
+                                            ctx=Load()),
+                                        ifs=[
+                                            Compare(
+                                                left=Attribute(
+                                                    value=Name(id='item', ctx=Load()),
+                                                    attr='product_id',
+                                                    ctx=Load()),
+                                                ops=[
+                                                    NotEq()],
+                                                comparators=[
+                                                    Name(id='product_id', ctx=Load())])],
+                                        is_async=0)])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Removed product '),
+                                            FormattedValue(
+                                                value=Name(id='product_id', ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value=' from '),
+                                            FormattedValue(
+                                                value=Attribute(
+                                                    value=Attribute(
+                                                        value=Name(id='self', ctx=Load()),
+                                                        attr='customer',
+                                                        ctx=Load()),
+                                                    attr='name',
+                                                    ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value="'s wishlist.")])],
+                                keywords=[]))],
+                    decorator_list=[])],
+            decorator_list=[]),
+        ClassDef(
+            name='Analytics',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='generate_sales_report',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='orders')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Name(id='total_sales', ctx=Store())],
+                            value=Call(
+                                func=Name(id='sum', ctx=Load()),
+                                args=[
+                                    GeneratorExp(
+                                        elt=Attribute(
+                                            value=Subscript(
+                                                value=Attribute(
+                                                    value=Name(id='order', ctx=Load()),
+                                                    attr='products',
+                                                    ctx=Load()),
+                                                slice=Constant(value=0),
+                                                ctx=Load()),
+                                            attr='price',
+                                            ctx=Load()),
+                                        generators=[
+                                            comprehension(
+                                                target=Name(id='order', ctx=Store()),
+                                                iter=Name(id='orders', ctx=Load()),
+                                                ifs=[
+                                                    Compare(
+                                                        left=Attribute(
+                                                            value=Name(id='order', ctx=Load()),
+                                                            attr='status',
+                                                            ctx=Load()),
+                                                        ops=[
+                                                            Eq()],
+                                                        comparators=[
+                                                            Constant(value='Paid')])],
+                                                is_async=0)])],
+                                keywords=[])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Total sales: $'),
+                                            FormattedValue(
+                                                value=Name(id='total_sales', ctx=Load()),
+                                                conversion=-1)])],
+                                keywords=[])),
+                        Return(
+                            value=Name(id='total_sales', ctx=Load()))],
+                    decorator_list=[
+                        Name(id='staticmethod', ctx=Load())]),
+                FunctionDef(
+                    name='generate_user_activity_report',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='users')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Name(id='active_users', ctx=Store())],
+                            value=ListComp(
+                                elt=Name(id='user', ctx=Load()),
+                                generators=[
+                                    comprehension(
+                                        target=Name(id='user', ctx=Store()),
+                                        iter=Name(id='users', ctx=Load()),
+                                        ifs=[
+                                            Attribute(
+                                                value=Name(id='user', ctx=Load()),
+                                                attr='order_history',
+                                                ctx=Load())],
+                                        is_async=0)])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Total active users: '),
+                                            FormattedValue(
+                                                value=Call(
+                                                    func=Name(id='len', ctx=Load()),
+                                                    args=[
+                                                        Name(id='active_users', ctx=Load())],
+                                                    keywords=[]),
+                                                conversion=-1)])],
+                                keywords=[])),
+                        Return(
+                            value=Name(id='active_users', ctx=Load()))],
+                    decorator_list=[
+                        Name(id='staticmethod', ctx=Load())])],
+            decorator_list=[]),
+        ClassDef(
+            name='Search',
+            bases=[],
+            keywords=[],
+            body=[
+                FunctionDef(
+                    name='search_products',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='products'),
+                            arg(arg='query')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Name(id='matching_products', ctx=Store())],
+                            value=ListComp(
+                                elt=Name(id='product', ctx=Load()),
+                                generators=[
+                                    comprehension(
+                                        target=Name(id='product', ctx=Store()),
+                                        iter=Name(id='products', ctx=Load()),
+                                        ifs=[
+                                            Compare(
+                                                left=Call(
+                                                    func=Attribute(
+                                                        value=Name(id='query', ctx=Load()),
+                                                        attr='lower',
+                                                        ctx=Load()),
+                                                    args=[],
+                                                    keywords=[]),
+                                                ops=[
+                                                    In()],
+                                                comparators=[
+                                                    Call(
+                                                        func=Attribute(
+                                                            value=Attribute(
+                                                                value=Name(id='product', ctx=Load()),
+                                                                attr='name',
+                                                                ctx=Load()),
+                                                            attr='lower',
+                                                            ctx=Load()),
+                                                        args=[],
+                                                        keywords=[])])],
+                                        is_async=0)])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Found '),
+                                            FormattedValue(
+                                                value=Call(
+                                                    func=Name(id='len', ctx=Load()),
+                                                    args=[
+                                                        Name(id='matching_products', ctx=Load())],
+                                                    keywords=[]),
+                                                conversion=-1),
+                                            Constant(value=" products matching '"),
+                                            FormattedValue(
+                                                value=Name(id='query', ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value="'.")])],
+                                keywords=[])),
+                        Return(
+                            value=Name(id='matching_products', ctx=Load()))],
+                    decorator_list=[
+                        Name(id='staticmethod', ctx=Load())]),
+                FunctionDef(
+                    name='filter_by_category',
+                    args=arguments(
+                        posonlyargs=[],
+                        args=[
+                            arg(arg='products'),
+                            arg(arg='category_name')],
+                        kwonlyargs=[],
+                        kw_defaults=[],
+                        defaults=[]),
+                    body=[
+                        Assign(
+                            targets=[
+                                Name(id='filtered_products', ctx=Store())],
+                            value=ListComp(
+                                elt=Name(id='product', ctx=Load()),
+                                generators=[
+                                    comprehension(
+                                        target=Name(id='product', ctx=Store()),
+                                        iter=Name(id='products', ctx=Load()),
+                                        ifs=[
+                                            Compare(
+                                                left=Attribute(
+                                                    value=Name(id='product', ctx=Load()),
+                                                    attr='category',
+                                                    ctx=Load()),
+                                                ops=[
+                                                    Eq()],
+                                                comparators=[
+                                                    Name(id='category_name', ctx=Load())])],
+                                        is_async=0)])),
+                        Expr(
+                            value=Call(
+                                func=Name(id='print', ctx=Load()),
+                                args=[
+                                    JoinedStr(
+                                        values=[
+                                            Constant(value='Found '),
+                                            FormattedValue(
+                                                value=Call(
+                                                    func=Name(id='len', ctx=Load()),
+                                                    args=[
+                                                        Name(id='filtered_products', ctx=Load())],
+                                                    keywords=[]),
+                                                conversion=-1),
+                                            Constant(value=" products in category '"),
+                                            FormattedValue(
+                                                value=Name(id='category_name', ctx=Load()),
+                                                conversion=-1),
+                                            Constant(value="'.")])],
+                                keywords=[])),
+                        Return(
+                            value=Name(id='filtered_products', ctx=Load()))],
+                    decorator_list=[
+                        Name(id='staticmethod', ctx=Load())])],
+            decorator_list=[])],
+    type_ignores=[])
